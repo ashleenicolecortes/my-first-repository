@@ -1,40 +1,25 @@
 public class Main {
-   
-   public static void main(String[] args){
-   
-         Vehicle vehicle1 = new Vehicle();
-         vehicle1.brand = "Ford";
-         vehicle1.model = "Mustang";
-         vehicle1.year = 1967;
 
-         Vehicle vehicle2 = new Vehicle();
-         vehicle2.brand = "Toyota";
-         vehicle2.model = "Civic";
-         vehicle2.year = 2020;
-         
-         Vehicle vehicle3 = new Vehicle();
-         vehicle3.brand = "Chevrolet";
-         vehicle3.model = "Corvette";
-         vehicle3.year = 1998;
+    public static void main(String[] args) {
+            
+            
+     Movie movie1 = new Movie();
+        movie1.title = "Avatar";
+        movie1.genre = "Sci-Fi/Action";
+        movie1.duration = 148;
 
-   System.out.println( " VEHICLE 1 ");
-   vehicle1.displayInfo();
-   System.out.println(" Age: "+ vehicle1.calculateAge() + " years");
-   System.out.println(" Is Vintage? " + vehicle1.isVintage());
-   System.out.println();
-   
-   System.out.println( " VEHICLE 2 ");
-   vehicle2.displayInfo();
-   System.out.println(" Age: "+ vehicle2.calculateAge() + " years");
-   System.out.println(" Is Vintage? " + vehicle2.isVintage());
-   System.out.println();
-   
-   System.out.println( " VEHICLE 3 ");
-   vehicle3.displayInfo();
-   System.out.println(" Age: "+ vehicle3.calculateAge() + " years");
-   System.out.println(" Is Vintage? " + vehicle3.isVintage());
-        
+     Movie movie2 = new Movie();
+        movie2.title = "The Dark Knight";
+        movie2.genre = "Action";
+        movie2.duration = 152;
 
-   }
+     Movie movie3 = new Movie();
+        movie3.title = "Interstellar";
+        movie3.genre = "Sci-Fi";
+        movie3.duration = 169;
 
+      movie1.displayInfo();
+      movie2.displayInfo();
+      movie3.displayInfo();
+    }
 }
